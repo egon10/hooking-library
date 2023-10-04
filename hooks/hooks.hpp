@@ -40,7 +40,7 @@ namespace hooks
 		hook_t( ) = default;
 
 		hook_t( void* func_addr, std::vector<std::uint8_t>&& original, const std::vector<std::uint8_t>&& patched )
-			: func_address( func_addr ), original_bytes( std::move( original ) ), patched_bytes( patched )
+			: func_address( func_addr ), original_bytes( original ), patched_bytes( patched )
 		{
 
 		}
