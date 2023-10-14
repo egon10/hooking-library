@@ -48,7 +48,6 @@ namespace hooks
         return nullptr;
     }
 
-    // handle jump tables
     bool create_trampoline_func( std::uintptr_t function_address, void* allocated_memory )
     {
         std::uintptr_t current_addr = function_address;
